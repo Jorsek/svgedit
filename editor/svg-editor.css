@@ -1,5 +1,5 @@
 body {
-  background: #D0D0D0;
+  background: #535353;
 }
 
 html, body, div{
@@ -22,11 +22,11 @@ html, body, div{
 #svg_editor {
   font-size: 8pt;
   font-family: Verdana, Helvetica, Arial;
-  color: #000000;
+  color: #eaeaea;
 }
 
 a {
-  color: #19c;
+  color: #09AFD6;
 }
 
 hr {
@@ -49,19 +49,13 @@ select {
 #svgcanvas {
   line-height: normal;
   display: inline-block;
-  background-color: #A0A0A0;
+  background-color: #242424;
   text-align: center;
   vertical-align: middle;
   width: 640px;
   height: 480px;
   -apple-dashboard-region:dashboard-region(control rectangle 0px 0px 0px 0px); /* for widget regions that shouldn't react to dragging */
   position: relative;
-  /*
-    A subtle gradient effect in the canvas.
-    Just experimenting - not sure if this is worth it.
-  */
-  background: -moz-radial-gradient(45deg,#bbb,#222);
-  background: -webkit-gradient(radial, center center, 3, center center, 1000, from(#bbb), to(#222));
 }
 
 /* Rulers
@@ -69,22 +63,22 @@ select {
 
 #rulers > div {
   position: absolute;
-  background: #DDD;
+  background: #474747;
   z-index: 1;
   overflow: hidden;
 }
 
 #ruler_corner {
-  top: 41px;
-  left: 41px;
+  top: 51px;
+  left: 51px;
   width: 15px;
   height: 15px;
 }
 
 #ruler_x {
   height: 15px;
-  top: 41px;
-  left: 56px;
+  top: 51px;
+  left: 66px;
   right: 30px;
   border-bottom: 1px solid;
   border-left: 1px solid #777;
@@ -92,8 +86,8 @@ select {
 
 #ruler_y {
   width: 15px;
-  top: 55px;
-  left: 41px;
+  top: 66px;
+  left: 51px;
   bottom: 56px;
   border-right: 1px solid;
   border-top: 1px solid #777;
@@ -118,14 +112,18 @@ select {
 
 #palette_holder {
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 7px;
   padding: 5px;
   position: absolute;
   right: 15px;
   height: 16px;
-  background: #f0f0f0;
+  background: #535353;
   border-radius: 3px;
   z-index: 2;
+}
+
+#palette_holder:hover{
+	cursor: pointer;
 }
 
 #stroke_bg,
@@ -138,7 +136,9 @@ select {
 #zoomLabel {
   cursor: pointer;
   margin-right: 5px;
-  padding-top: 4px
+  padding-top: 4px;
+  height: 25px !important;
+  width: 25px !important;
 }
 
 #linkLabel > svg {
@@ -155,9 +155,9 @@ select {
 #workarea {
   display: inline-table-cell;
   position:absolute;
-  top: 40px;
-  left: 40px;
-  bottom: 40px;
+  top: 50px;
+  left: 50px;
+  bottom: 50px;
   right: 14px;
   background-color: #A0A0A0;
   border: 1px solid #808080;
@@ -168,8 +168,8 @@ select {
 #sidepanels {
   display: inline-block;
   position:absolute;
-  top: 40px;
-  bottom: 40px;
+  top: 50px;
+  bottom: 50px;
   right: 0;
   width: 2px;
   padding: 10px;
@@ -202,7 +202,7 @@ select {
 #sidepanel_handle {
   display: inline-block;
   position: absolute;
-  background-color: #D0D0D0;
+  background-color: #535353;
   font-weight: bold;
   left: 0;
   top: 40%;
@@ -233,10 +233,6 @@ select {
   padding-right: 2px;
   width: 125px;
   height: 20px;
-  border-right: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  border-left: 1px solid #808080;
-  border-top: 1px solid #808080;
   overflow: hidden;
 }
 
@@ -244,10 +240,6 @@ select {
   width: 14px;
   height: 14px;
   padding: 1px;
-  border-left: 1px solid #FFFFFF;
-  border-top: 1px solid #FFFFFF;
-  border-right: 1px solid #808080;
-  border-bottom: 1px solid #808080;
   cursor: pointer;
   float: left;
   margin-right: 3px;
@@ -284,8 +276,7 @@ select {
 }
 
 #layerlist tr.layersel {
-  border: 1px solid #808080;
-  background-color: #CCCCCC;
+  background-color: #383838;
 }
 
 #layerlist td.layervis {
@@ -342,8 +333,8 @@ div.palette_item:first-child {
 
 #main_button {
   position: absolute;
-  top: 4px;
-  left: 5px;
+  top: 2px;
+  left: 2px;
   z-index: 5;
 }
 
@@ -351,20 +342,20 @@ div.palette_item:first-child {
   position: relative;
   top: -2px;
   left: -2px;
-  width: 95px;
+  width: 120px;
+  background-color: #535353;
+  border: 2px solid #535353 !important;
   line-height: 26px;
+  display: none;
 }
 
 #main_icon:hover {
-  background: #eee !important;
+  background-color: #494949 !important;
+  border: 2px solid #5b5b5b !important;
 }
 
 #main_icon.buttondown {
-  background: #eee !important;
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border-radius: 3px 3px 0 0;
+  background-color: #494949 !important;
 }
 
 #logo {
@@ -375,6 +366,7 @@ div.palette_item:first-child {
   border: 0;
   width: 28px;
   height: 28px;
+  margin: 10px 0 0 5px;
 }
 
 #main_icon > div {
@@ -384,7 +376,8 @@ div.palette_item:first-child {
 #main_button .dropdown {
   position: absolute;
   right: 7px;
-  top: 4px;
+  top: 10px;
+  top: 10px;
 }
 
 #main_icon span {
@@ -396,9 +389,10 @@ div.palette_item:first-child {
   display: block;
   z-index: 2;
   font-weight: bold;
-  padding-left: 34px;
-  line-height: 32px;
+  padding-left: 45px;
+  line-height: 45px;
   font-family: sans-serif;
+  color: #EAEAEA;
 }
 
 #main_menu {
@@ -407,14 +401,14 @@ div.palette_item:first-child {
   position: relative;
   width: 230px;
   padding: 5px;
-  -moz-box-shadow: #555 1px 1px 4px;
-  -webkit-box-shadow: #555 1px 1px 4px;
-  box-shadow: #555 1px 1px 4px;
   font-size: 1.1em;
   display: none;
   overflow: hidden;
   clear: both;
   top: -9px;
+  background-color: #494949 !important;
+  border: 2px solid #5b5b5b !important;
+  box-shadow: 10px 10px 15px 2px #00000040;
 }
 
 #main_menu ul,
@@ -435,7 +429,7 @@ div.palette_item:first-child {
 }
 
 #main_menu li:hover {
-  background: #FFC;
+  background: #535353;
 }
 
 #main_menu li > div {
@@ -456,16 +450,13 @@ div.palette_item:first-child {
 .tool_button_current,
 .push_button_pressed
 {
-  background-color: #ffc !important;
+  background-color: #383838 !important;
 }
 
 .tool_button_current,
 .push_button_pressed,
 .buttondown {
-  background-color: #f4e284 !important;
-  -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4), 1px 1px  0 white  !important;
-  -moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4), 1px 1px  0 white  !important;
-  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4), 1px 1px  0 white  !important;
+  background-color: #282828 !important;
 }
 
 #tools_top {
@@ -479,18 +470,16 @@ div.palette_item:first-child {
 }
 
 #tools_top .tool_sep {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 #tools_left {
   position: absolute;
   border-right: none;
-  width: 32px;
+  width: 50px;
   top: 40px;
-  left: 1px;
-  margin-top: -2px;
-  padding-left: 2px;
-  background: #D0D0D0; /* Needed so flyout icons don't appear on the left */
+  left: 0;
+  background: #535353; /* Needed so flyout icons don't appear on the left */
   z-index: 4;
 }
 
@@ -520,8 +509,14 @@ div.palette_item:first-child {
 }
 
 #editor_panel, #history_panel {
-  height: 34px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-top: 0;
   float: left;
+}
+
+.tool_sep_top{
+	margin-top: 7px !important;
 }
 
 #multiselected_panel .selected_tool {
@@ -553,7 +548,7 @@ div.palette_item:first-child {
 }
 
 #tools_top > div, #tools_top {
-  line-height: 26px;
+  line-height: 50px;
 }
 
 div.toolset,
@@ -562,12 +557,12 @@ div.toolset > * {
 }
 
 div.toolset {
-  height: 34px;
+  height: 50px;
 }
 
 div.toolset label span {
 /*  outline: 1px solid red;*/
-  padding-top: 3px;
+  padding-top: -2px;
   display: inline-block;
 }
 
@@ -582,8 +577,9 @@ div.toolset label span {
 }
 
 #tools_top input {
-  margin-top: 5px;
+  margin-top: 7px;
   height: 15px;
+  padding-right: 8px;
 }
 
 input[type=text] {
@@ -610,31 +606,28 @@ span.zoom_tool {
 }
 
 #zoom_panel {
-  margin-top: 5px;
+  margin-top: 14px;
+}
+
+#zoom_panel label{
+	margin: 0 5px 0 0;
 }
 
 .dropdown {
   position: relative;
+  margin: 0 0 0 0;
 }
 
 .dropdown button {
   width: 15px;
   height: 21px;
-  margin: 6px 0 0 1px;
+  margin: 14px 0 0 1px;
   padding: 0;
-  border-left: 1px solid #FFFFFF;
-  border-top: 1px solid #FFFFFF;
-  border-right: 1px solid #808080;
-  border-bottom: 1px solid #808080;
-  background-color: #E8E8E8;
+  background-color: #535353;
 }
 
 .dropdown button.down {
-  border-left: 1px solid #808080;
-  border-top: 1px solid #808080;
-  border-right: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  background-color: #B0B0B0;
+  background-color: #383838;
 }
 
 .dropdown ul {
@@ -655,16 +648,15 @@ span.zoom_tool {
 
 .dropdown li {
   display: block;
-  width: 120px;
-  padding: 4px;
-  background: #E8E8E8;
-  border: 1px solid #B0B0B0;
-  margin: 0 0 -1px 0;
+  width: 50px;
+  padding: 0;
+  background: #535353;
+  line-height: 16px;
   line-height: 16px;
 }
 
 .dropdown li:hover {
-  background-color: #FFC;
+  background-color: #282828;
 }
 
 .dropdown li.special {
@@ -672,7 +664,7 @@ span.zoom_tool {
 }
 
 .dropdown li.special:hover {
-  background: #FFC;
+  background: #282828;
 }
 
 #font_family_dropdown-list li {
@@ -689,16 +681,14 @@ span.zoom_tool {
 .tool_button_current,
 .push_button_pressed
 {
-  height: 24px;
-  width: 24px;
-  margin: 2px 2px 4px 2px;
-  padding: 3px;
-  -webkit-box-shadow: inset 1px 1px 2px white, 1px 1px 1px rgba(0,0,0,0.3);
-  moz-box-shadow: inset 1px 1px 2px white, 1px 1px 1px rgba(0,0,0,0.3);
-  box-shadow: inset 1px 1px 2px white, 1px 1px 1px rgba(0,0,0,0.3);
-  background-color: #E8E8E8;
+  height: 48px;
+  width: 48px;
+  /* change this padding and margin to adjust button size*/
+  padding: 0;
+  background-color: #535353;
   cursor: pointer;
   border-radius: 3px;
+  box-sizing: border-box;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
@@ -710,6 +700,7 @@ span.zoom_tool {
 
 #tool_image {
   overflow: hidden;
+  display: none;
 }
 
 #tool_open input,
@@ -733,19 +724,20 @@ span.zoom_tool {
   width: 1px;
   background: #888;
   border-left: 1px outset #EEE;
-  margin: 2px 3px;
+  margin: -4px 3px 0 5px;
   padding: 0;
-  height: 24px;
+  height: 30px;
 }
 
 .icon_label {
   float: left;
-  padding-top: 3px;
+  padding-top: 0;
   padding-right: 3px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 0;
+  height: 50px;
+  width: 50px;
 }
 
 .width_label {
@@ -786,7 +778,7 @@ span.zoom_tool {
 #color_picker {
   position: absolute;
   display: none;
-  background: #E8E8E8;
+  background: #535353;
   height: 350px;
   z-index: 5;
 }
@@ -795,6 +787,7 @@ span.zoom_tool {
   position: absolute;
   display: none;
   cursor: pointer;
+  left: 50px;
   width: 400px;
   z-index: 1;
 }
@@ -808,21 +801,17 @@ span.zoom_tool {
 
 .tools_flyout .tool_button {
   float: left;
-  background-color: #E8E8E8;
-  border-left: 1px solid #FFFFFF;
-  border-top: 1px solid #FFFFFF;
-  border-right: 1px solid #808080;
-  border-bottom: 1px solid #808080;
-  height: 28px;
-  width: 28px;
+  background-color: #535353;
+  height: 50px;
+  width: 50px;
 }
 
 #tools_bottom {
   position: absolute;
-  left: 40px;
+  left: 50px;
   right: 0;
   bottom: 0;
-  height: 40px;
+  height: 50px;
   overflow: visible;
 }
 
@@ -842,7 +831,7 @@ span.zoom_tool {
   float: left;
   width: 300px;
   position: relative;
-  margin-top: 5px;
+  box-sizing: border-box;
   -webkit-transition: width 150ms ease;
 }
 
@@ -855,7 +844,7 @@ span.zoom_tool {
 }
 
 .dropdown li.tool_button {
-  width: 24px;
+  width: 50px;
 }
 
 #tools_bottom_2 .icon_label {
@@ -896,7 +885,7 @@ span.zoom_tool {
   content: '>>';
   letter-spacing: -3px;
   font-weight: bold;
-  color: #666;
+  color: #eaeaea;
 }
 
 .expanded #tool_stroke.color_tool {
@@ -908,13 +897,15 @@ span.zoom_tool {
 }
 
 #toggle_stroke_tools:hover {
-  background: white;
+  background: #494949;
+  cursor: pointer;
 }
 
 .color_tool {
   position: absolute;
   overflow: hidden;
-  background: #f0f0f0;
+  background: #535353;
+  margin: 14px 0 0 0;
   height: 26px;
   line-height: 26px;
   border-radius: 3px;
@@ -922,7 +913,7 @@ span.zoom_tool {
 }
 
 #tool_stroke.color_tool {
-  width: 130px;
+  width: 140px;
   z-index: 2;
   -webkit-transition: width 150ms ease;
   -moz-transition: width 150ms ease;
@@ -951,7 +942,7 @@ span.zoom_tool {
 }
 
 .color_tool .stroke_label {
-  margin-left: 25px;
+  margin-left: 0;
   float: left;
 }
 
@@ -1028,8 +1019,8 @@ span.zoom_tool {
 }
 
 #option_lists .optcols3 {
-  width: 90px;
-  margin-left: -31px;
+  width: 50px;
+  margin-left: -5px;
 }
 
 #option_lists .optcols4 {
@@ -1042,7 +1033,7 @@ span.zoom_tool {
 }
 
 ul li.current {
-  background-color: #F4E284;
+  background-color: #282828;
 }
 
 #option_lists ul li {
@@ -1053,7 +1044,7 @@ ul li.current {
 }
 
 #tools_bottom .dropdown button {
-  margin-top: 2px;
+  margin-top: 0;
 }
 
 #opacity_dropdown li {
@@ -1086,7 +1077,7 @@ ul li.current {
   left: 30px;
   right: 30px;
   bottom: 30px;
-  background-color: #B0B0B0;
+  background-color: #535353;
   opacity: 1.0;
   text-align: center;
   border: 1px outset #777;
@@ -1199,9 +1190,10 @@ ul li.current {
 #svg_source_editor #svg_source_textarea {
   position: relative;
   width: 95%;
-  height: 95%;
+  height: 80%;
   padding: 5px;
   font-size: 12px;
+  margin: 60px 0 0 0;
 }
 
 #svg_source_editor #tool_source_back {
@@ -1251,39 +1243,28 @@ ul li.current {
 }
 
 .toolbar_button button {
-  border:1px solid #dedede;
   line-height:130%;
+  height: 50px;
+  width: 50px;
   float: left;
-  background: #E8E8E8 none;
-  padding:5px 10px 5px 7px; /* Firefox */
+  background: #535353;
   line-height:17px; /* Safari */
   margin: 5px 20px 0 0;
-  border: 1px #808080 solid;
-  border-top-color: #FFF;
-  border-left-color: #FFF;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
 
 .toolbar_button button:hover {
-  border: 1px #e0a874 solid;
-  border-top-color: #fcd9ba;
-  border-left-color: #fcd9ba;
-  background-color: #FFC;
+  background-color: #383838;
 }
 .toolbar_button button:active {
-  background-color: #F4E284;
-  border-left: 1px solid #663300;
-  border-top: 1px solid #663300;
+  background-color: #282828;
 }
 
 .toolbar_button button .svg_icon {
   margin: 0 3px -3px 0 !important;
   padding: 0;
   border: none;
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
 }
 
 #dialog_box {
@@ -1372,9 +1353,9 @@ ul li.current {
 /* Necessary to keep the flyouts sized properly */
 .tools_flyout .tool_button,
 .tools_flyout .tool_flyout {
-  padding: 2px;
-  width: 24px;
-  height: 24px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
   margin: 0;
   border-radius: 0px;
   -moz-border-radius: 0px;

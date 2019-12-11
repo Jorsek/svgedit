@@ -1,4 +1,4 @@
-/* eslint-disable new-cap, class-methods-use-this, prefer-named-capture-group */
+/* eslint-disable new-cap, class-methods-use-this */
 // Todo: Compare with latest canvg (add any improvements of ours) and add full JSDocs (denoting links to standard APIs and which are custom): https://github.com/canvg/canvg
 /**
  * canvg.js - Javascript SVG parser and renderer on Canvas
@@ -152,7 +152,7 @@ function build (opts) {
 
   // compress spaces
   svg.compressSpaces = function (s) {
-    return s.replace(/[\s\r\t\n]+/gm, ' ');
+    return s.replace(/\s+/gm, ' ');
   };
 
   // ajax
@@ -302,7 +302,7 @@ function build (opts) {
     }
 
     getUnits () {
-      return String(this.value).replace(/[0-9.-]/g, '');
+      return String(this.value).replace(/[\d.-]/g, '');
     }
 
     // get the length as pixels
@@ -1254,8 +1254,8 @@ function build (opts) {
         .replace(/,/gm, ' ') // get rid of all commas
         .replace(/([MmZzLlHhVvCcSsQqTtAa])([MmZzLlHhVvCcSsQqTtAa])/gm, '$1 $2') // separate commands from commands
         .replace(/([MmZzLlHhVvCcSsQqTtAa])([MmZzLlHhVvCcSsQqTtAa])/gm, '$1 $2') // separate commands from commands
-        .replace(/([MmZzLlHhVvCcSsQqTtAa])([^\s])/gm, '$1 $2') // separate commands from points
-        .replace(/([^\s])([MmZzLlHhVvCcSsQqTtAa])/gm, '$1 $2') // separate commands from points
+        .replace(/([MmZzLlHhVvCcSsQqTtAa])(\S)/gm, '$1 $2') // separate commands from points
+        .replace(/(\S)([MmZzLlHhVvCcSsQqTtAa])/gm, '$1 $2') // separate commands from points
         .replace(/(\d)([+-])/gm, '$1 $2') // separate digits when no comma
         .replace(/(\.\d*)(\.)/gm, '$1 $2') // separate digits when no comma
         .replace(/([Aa](\s+\d+)(\s+\d+)(\s+\d+))\s+([01])\s*([01])/gm, '$1 $5 $6 '); // shorthand elliptical arc path syntax
@@ -1881,7 +1881,7 @@ function build (opts) {
         }
         return false;
       }
-      this.duration = this.duration + delta;
+      this.duration += delta;
 
       // if we're past the begin time
       let updated = false;
@@ -2367,7 +2367,7 @@ function build (opts) {
         css += nodeValue;
       });
       // remove comments
-      css = css.replace(/(\/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+\/)|(^[\s]*\/\/.*)/gm, ''); // eslint-disable-line unicorn/no-unsafe-regex
+      css = css.replace(/(\/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+\/)|(^\s*\/\/.*)/gm, ''); // eslint-disable-line unicorn/no-unsafe-regex
       // replace whitespace
       css = svg.compressSpaces(css);
       const cssDefs = css.split('}');

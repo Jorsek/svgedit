@@ -3287,8 +3287,8 @@ function selectWord (evt) {
 
   const index = getIndexFromPoint(pt.x, pt.y);
   const str = curtext.textContent;
-  const first = str.substr(0, index).replace(/[a-z0-9]+$/i, '').length;
-  const m = str.substr(index).match(/^[a-z0-9]+/i);
+  const first = str.substr(0, index).replace(/[a-z\d]+$/i, '').length;
+  const m = str.substr(index).match(/^[a-z\d]+/i);
   const last = (m ? m[0].length : 0) + index;
   setSelection(first, last);
 
@@ -4532,9 +4532,11 @@ this.setSvgString = function (xmlString, preventUndo) {
       if (val) {
         if (val.startsWith('data:')) {
           // Check if an SVG-edit data URI
-          const m = val.match(/svgedit_url=(?<url>.*?);/);
+          const m = val.match(/svgedit_url=(.*?);/);
+          // const m = val.match(/svgedit_url=(?<url>.*?);/);
           if (m) {
-            const url = decodeURIComponent(m.groups.url);
+            const url = decodeURIComponent(m[1]);
+            // const url = decodeURIComponent(m.groups.url);
             $(new Image()).load(function () {
               image.setAttributeNS(NS.XLINK, 'xlink:href', url);
             }).attr('src', url);

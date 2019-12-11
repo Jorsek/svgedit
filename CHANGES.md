@@ -2,22 +2,48 @@
 
 ## ?
 
+- License: Relicense ext-mathjax from Apache-2.0 to MIT per
+  <https://github.com/josegaert/ext-mathjax/issues/6>
+- License: Clarify in `@license` that `ext-server_moinsave.js` is
+  "(MIT OR GPL-2.0-or-later)" per subsequent text
+- License: Reorder license listing in `jquery.contextMenu.js` so
+  that more permissive is noticeable first
+- Fix (Accessibility): Avoid duplicate IDs
+- Optimization: Remove unused `jquery-ui-1.8.custom.min.js` file
+- Linting (ESLint): Simplify regexes
+- Testing: Switch to Cypress with code coverage for UI testing;
+  use ESM version for faster debugging
+- Testing: Add map file for underscore
+- npm: Update scripts to reflect removal of `all_tests.html`;
+  remove `browser-test` script
+- npm: Update devDeps, peerDeps
+
+## 5.1.0
+
 - Deprecated: Should now use `avoidClientSideDownload` in place of
     `avoidClientSide` (config for `ext-server_opensave.js`).
+- Fix: IE 11 issue; fixes #363
 - Fix: Avoid race condition in `jQuery.svgIcons.js` (evident
     when attempting to load from `file:` URL in Chrome)
+- Fix: Input width (@seahindeniz)
+- Fix: Use change event to be sure that file is loaded before
+   the function (@Moliman)
 - Enhancement: Added `avoidClientSideOpen` config for
     `ext-server_opensave.js`
 - Optimization: Re-rerun image optimization per update
 - Linting (ESLint): Adjust per now applied rules
 - Linting (ESLint): Add HTML files to linting
 - Linting (ESLint): Avoid shadowing
+- Linting: Assorted changes; ensure license versions are valid semver
 - Refactoring: Use `static` keyword for classes
+- Refactoring: Prefer `for...of`, `event.key` (newly enforced linting)
+- Refactoring: Better var. names
 - Testing: Accessibility test API update
 - Docs: Clarify need for Node.js/npm being installed
 - Build: Remove `types-docs` script as being handled in ESLint
 - Maintenance: Add `.editorconfig`
 - npm: Add script to fix eslint errors
+- npm: Rename `build-config` to `build-by-config`
 - npm: Update devDeps (including switching from deprecated opn-cli
     package to open-cli); update core-js-bundle copy; add new
     axe testing peer dep. axe-core in devDeps
