@@ -29895,15 +29895,15 @@
         // },
         '#tools_top': {
           left: 50 + $$b('#main_button').width(),
-          height: 50
+          height: 72
         },
         '#tools_left': {
           width: 50,
-          top: 50
+          top: 74
         },
         'div#workarea': {
-          left: 50,
-          top: 50
+          left: 65,
+          top: 74
         } // '#tools_bottom': {
         //   left: {s: '27px', l: '46px', xl: '65px'},
         //   height: {s: '58px', l: '98px', xl: '145px'}
@@ -30032,8 +30032,8 @@
 
     function setIcons() {
       $$b.svgIcons(curConfig.imgPath + 'svg_edit_icons.svg', {
-        w: 50,
-        h: 50,
+        w: 48,
+        h: 48,
         id_match: false,
         no_img: !isWebkit(),
         // Opera & Firefox 4 gives odd behavior w/images
@@ -32481,8 +32481,8 @@
               return _context7.abrupt("return", new Promise(function (resolve, reject) {
                 // eslint-disable-line promise/avoid-new
                 $$b.svgIcons(svgicons, {
-                  w: 50,
-                  h: 50,
+                  w: 48,
+                  h: 48,
                   id_match: false,
                   no_img: !isWebkit(),
                   fallback: fallbackObj,
@@ -36579,7 +36579,8 @@
     stylesheets: ['@default', '../svgedit-custom.css']
   }); // OTHER CONFIG
 
-  editor.setConfig({// canvasName: 'default',
+  editor.setConfig({
+    // canvasName: 'default',
     // canvas_expansion: 3,
     // initFill: {
     //   color: 'FF0000', // solid red
@@ -36621,9 +36622,11 @@
     // EXTENSION-RELATED (GRID)
     // showGrid: false, // Set by ext-grid.js
     // EXTENSION-RELATED (STORAGE)
-    // noStorageOnLoad: false, // Some interaction with ext-storage.js; prevent even the loading of previously saved local storage
-    // forceStorage: false, // Some interaction with ext-storage.js; strongly discouraged from modification as it bypasses user privacy by preventing them from choosing whether to keep local storage or not
+    noStorageOnLoad: true,
+    // Some interaction with ext-storage.js; prevent even the loading of previously saved local storage
+    forceStorage: true // Some interaction with ext-storage.js; strongly discouraged from modification as it bypasses user privacy by preventing them from choosing whether to keep local storage or not
     // emptyStorageOnDecline: true, // Used by ext-storage.js; empty any prior storage if the user declines to store
+
   }); // PREF CHANGES
 
   /**

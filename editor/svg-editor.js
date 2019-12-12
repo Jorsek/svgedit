@@ -984,7 +984,7 @@ editor.init = function () {
     if (typeof size === 'number') {
       scale = size;
     } else {
-      const iconSizes = {s: 0.75, m: 1, l: 1.25, xl: 1.5};
+      const iconSizes = {s: 1, m: 1, l: 1, xl: 1};
       scale = iconSizes[size];
     }
 
@@ -1051,11 +1051,11 @@ editor.init = function () {
         height: 72
       },
       '#tools_left': {
-        width: 87.5,
+        width: 50,
         top: 74
       },
       'div#workarea': {
-        left: 38,
+        left: 65,
         top: 74
       }
       // '#tools_bottom': {
@@ -1183,7 +1183,7 @@ editor.init = function () {
    */
   function setIcons () {
     $.svgIcons(curConfig.imgPath + 'svg_edit_icons.svg', {
-      w: 24, h: 24,
+      w: 48, h: 48,
       id_match: false,
       no_img: !isWebkit(), // Opera & Firefox 4 gives odd behavior w/images
       fallback_path: curConfig.imgPath,
@@ -2931,7 +2931,7 @@ editor.init = function () {
           return false;
         }
         const holder = $(holdSel);
-        const l = pos.left + 34;
+        const l = pos.left + 50;
         const w = holder.width() * -1;
         const time = holder.data('shown_popop') ? 200 : 0;
         timer = setTimeout(function () {
@@ -3466,7 +3466,7 @@ editor.init = function () {
       if (svgicons) {
         return new Promise((resolve, reject) => { // eslint-disable-line promise/avoid-new
           $.svgIcons(svgicons, {
-            w: 24, h: 24,
+            w: 48, h: 48,
             id_match: false,
             no_img: (!isWebkit()),
             fallback: fallbackObj,

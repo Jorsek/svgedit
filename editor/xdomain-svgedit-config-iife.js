@@ -29832,10 +29832,10 @@
         scale = size;
       } else {
         var iconSizes = {
-          s: 0.75,
+          s: 1,
           m: 1,
-          l: 1.25,
-          xl: 1.5
+          l: 1,
+          xl: 1
         };
         scale = iconSizes[size];
       }
@@ -29898,11 +29898,11 @@
           height: 72
         },
         '#tools_left': {
-          width: 31,
+          width: 50,
           top: 74
         },
         'div#workarea': {
-          left: 38,
+          left: 65,
           top: 74
         } // '#tools_bottom': {
         //   left: {s: '27px', l: '46px', xl: '65px'},
@@ -30032,8 +30032,8 @@
 
     function setIcons() {
       $$b.svgIcons(curConfig.imgPath + 'svg_edit_icons.svg', {
-        w: 24,
-        h: 24,
+        w: 48,
+        h: 48,
         id_match: false,
         no_img: !isWebkit(),
         // Opera & Firefox 4 gives odd behavior w/images
@@ -31889,7 +31889,7 @@
           }
 
           var holder = $$b(holdSel);
-          var l = pos.left + 34;
+          var l = pos.left + 50;
           var w = holder.width() * -1;
           var time = holder.data('shown_popop') ? 200 : 0;
           timer = setTimeout(function () {
@@ -32481,8 +32481,8 @@
               return _context7.abrupt("return", new Promise(function (resolve, reject) {
                 // eslint-disable-line promise/avoid-new
                 $$b.svgIcons(svgicons, {
-                  w: 24,
-                  h: 24,
+                  w: 48,
+                  h: 48,
                   id_match: false,
                   no_img: !isWebkit(),
                   fallback: fallbackObj,
