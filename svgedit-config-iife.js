@@ -36569,8 +36569,7 @@
   }); // EXTENSION CONFIG
 
   editor.setConfig({
-    extensions: [// 'ext-overview_window.js', 'ext-markers.js', 'ext-connector.js', 'ext-eyedropper.js', 'ext-shapes.js', 'ext-imagelib.js', 'ext-grid.js', 'ext-polygon.js', 'ext-star.js', 'ext-panning.js', 'ext-storage.js'
-    ],
+    extensions: ['ext-overview_window.js', 'ext-markers.js', 'ext-connector.js', 'ext-eyedropper.js', 'ext-shapes.js', 'ext-imagelib.js', 'ext-grid.js', 'ext-polygon.js', 'ext-star.js', 'ext-panning.js', 'ext-storage.js'],
     noDefaultExtensions: false // noDefaultExtensions can only be meaningfully used in svgedit-config-iife.js or in the URL
 
   }); // STYLESHEET CONFIG
@@ -36582,15 +36581,17 @@
   editor.setConfig({
     // canvasName: 'default',
     // canvas_expansion: 3,
-    // initFill: {
-    //   color: 'FF0000', // solid red
-    //   opacity: 1
-    // },
-    // initStroke: {
-    //   width: 5,
-    //   color: '000000', // solid black
-    //   opacity: 1
-    // },
+    initFill: {
+      color: '00000000',
+      // transparent
+      opacity: 1
+    },
+    initStroke: {
+      width: 2,
+      color: '000000',
+      // solid black
+      opacity: 1
+    },
     // initOpacity: 1,
     // colorPickerCSS: null,
     // initTool: 'select',
