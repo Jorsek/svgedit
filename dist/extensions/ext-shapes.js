@@ -91,7 +91,7 @@ var svgEditorExtension_shapes = (function () {
                 var off = size * 0.05;
                 var vb = [-off, -off, size + off * 2, size + off * 2].join(' ');
                 var stroke = fill ? 0 : size / 30;
-                var shapeIcon = new DOMParser().parseFromString('<svg xmlns="http://www.w3.org/2000/svg">' + '<svg viewBox="' + vb + '">' + '<path fill="' + (fill ? '#333' : 'none') + '" stroke="#000" stroke-width="' + stroke + '" /></svg></svg>', 'text/xml');
+                var shapeIcon = new DOMParser().parseFromString('<svg xmlns="http://www.w3.org/2000/svg">' + '<svg viewBox="' + vb + '">' + '<path fill="' + (fill ? '#333' : 'none') + '" stroke="#fff" stroke-width="' + stroke + '" /></svg></svg>', 'text/xml');
                 var width = 24;
                 var height = 24;
                 shapeIcon.documentElement.setAttribute('width', width);
@@ -191,7 +191,7 @@ var svgEditorExtension_shapes = (function () {
                   return Object.assign(buttons[i], button);
                 }),
                 callback: function callback() {
-                  $('<style>').text("\n          #shape_buttons {\n            overflow: auto;\n            width: 180px;\n            max-height: 300px;\n            display: table-cell;\n            vertical-align: middle;\n          }\n          #shape_cats {\n            min-width: 110px;\n            display: table-cell;\n            vertical-align: middle;\n            height: 300px;\n          }\n          #shape_cats > div {\n            line-height: 1em;\n            padding: .5em;\n            border:1px solid #B0B0B0;\n            background: #E8E8E8;\n            margin-bottom: -1px;\n          }\n          #shape_cats div:hover {\n            background: #FFFFCC;\n          }\n          #shape_cats div.current {\n            font-weight: bold;\n          }\n        ").appendTo('head');
+                  $('<style>').text("\n          #shape_buttons {\n            overflow: auto;\n            width: 150px;\n            max-height: 300px;\n            display: table-cell;\n            vertical-align: middle;\n          }\n          #shape_cats {\n            min-width: 110px;\n            display: table-cell;\n            vertical-align: middle;\n            height: 300px;\n          }\n          #shape_cats > div {\n            line-height: 1em;\n            padding: .5em;\n                        background: #535353;\n            margin-bottom: -1px;\n          }\n          #shape_cats div:hover {\n            background: #383838;\n          }\n          #shape_cats div.current {\n            font-weight: bold;\n          }\n        ").appendTo('head');
                   var btnDiv = $('<div id="shape_buttons">');
                   $('#tools_shapelib > *').wrapAll(btnDiv);
                   var shower = $('#tools_shapelib_show');
