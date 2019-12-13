@@ -29895,15 +29895,15 @@
         // },
         '#tools_top': {
           left: 50 + $$b('#main_button').width(),
-          height: 72
+          height: 50
         },
         '#tools_left': {
           width: 50,
-          top: 74
+          top: 50
         },
         'div#workarea': {
-          left: 65,
-          top: 74
+          left: 50,
+          top: 50
         } // '#tools_bottom': {
         //   left: {s: '27px', l: '46px', xl: '65px'},
         //   height: {s: '58px', l: '98px', xl: '145px'}
@@ -30200,7 +30200,7 @@
           '#fill_bg .svg_icon, #stroke_bg .svg_icon': 16,
           '.toolbar_button button .svg_icon': 16,
           '.stroke_tool div div .svg_icon': 20,
-          '#tools_bottom label .svg_icon': 18
+          '#tools_bottom label .svg_icon': 25
         },
         callback: function callback(icons) {
           var tleft, minHeight, size, getStylesheetPriority, stylesheets, idx, _stylesheets;
