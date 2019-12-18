@@ -1,10 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <g id="tool_shapelib">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-      <path fill="#c0c0c0" stroke-linejoin="round" stroke-width="14" stroke="#202020" fill-rule="nonzero" d="m70,194.72501l0,0c0,-10.30901 35.8172,-18.666 80,-18.666c44.18298,0 80,8.35699 80,18.666l0,74.66699c0,10.30899 -35.81702,18.66699 -80,18.66699c-44.1828,0 -80,-8.358 -80,-18.66699l0,-74.66699z"/>
-      <path fill="#c0c0c0" stroke-linejoin="round" stroke-width="14" stroke="#202020" fill-rule="nonzero" d="m70,114.608l0,0c0,-10.309 35.8172,-18.6668 80,-18.6668c44.18298,0 80,8.3578 80,18.6668l0,74.66699c0,10.30901 -35.81702,18.666 -80,18.666c-44.1828,0 -80,-8.35699 -80,-18.666l0,-74.66699z"/>
-      <path fill="#c0c0c0" stroke-linejoin="round" stroke-width="14" stroke="#202020" fill-rule="nonzero" d="m70,33.6667l0,0c0,-10.3094 35.8172,-18.6667 80,-18.6667c44.18298,0 80,8.3573 80,18.6667l0,74.6663c0,10.31 -35.81702,18.667 -80,18.667c-44.1828,0 -80,-8.357 -80,-18.667l0,-74.6663z"/>
-      <path id="svg_1" fill="#c0c0c0" stroke-linejoin="round" stroke-width="14" stroke="#202020" fill-rule="nonzero" d="m230,32.33334c0,10.30931 -35.81726,18.66666 -80,18.66666c-44.1828,0 -80,-8.35735 -80,-18.66666"/>
-    </svg>
+    <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EAEAEA;}
+	.st1{fill:none;}
+</style>
+<defs>
+</defs>
+<g>
+	<g>
+		<path class="st0" d="M52.4,40.4c12.9,0,23.4-2.3,23.4-5.2H29C29,38.1,39.5,40.4,52.4,40.4z"/>
+		<path class="st0" d="M69.6,41.8c-4.6,1-10.7,1.6-17.2,1.6c-6.5,0-12.6-0.6-17.2-1.6c-2-0.4-4.4-1.1-6.2-2.2v24.8
+			c0,2.9,10.5,5.2,23.4,5.2c12.9,0,23.4-2.3,23.4-5.2V39.6C74,40.7,71.6,41.3,69.6,41.8z"/>
+	</g>
+	<ellipse class="st0" cx="52.4" cy="35.2" rx="23.4" ry="5.2"/>
+	<rect class="st1" width="100" height="100"/>
+</g>
+</svg>
   </g>
 </svg>

@@ -661,7 +661,7 @@ span.zoom_tool {
 .dropdown li {
   display: block;
   width: 130px;
-  padding: 5px 0 5px 20px;
+  padding: 5px 0;
   background: #535353;
   line-height: 16px;
   line-height: 16px;

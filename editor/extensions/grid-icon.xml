@@ -8,23 +8,22 @@
   Multiple icons can be included, each within their own group.
 -->
   <g id="view_grid">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <g>
-      <rect fill="#ffffff" stroke="#848484" x="2" y="2" width="20" height="20"/>
-      <line fill="none" stroke="#848484" x1="11.84375" y1="-1.53125" x2="11.84375" y2="18.46875" transform="rotate(90, 11.8429, 8.46955)"/>
-      <line fill="none" stroke="#848484" x1="11.90625" y1="5.21875" x2="11.90625" y2="25.21875" transform="rotate(90, 11.9054, 15.2196)"/>
-      <line fill="none" stroke="#848484" x1="8.5" y1="2.03125" x2="8.5" y2="22.03125"/>
-      <line fill="none" stroke="#848484" x1="15.5" y1="2.03125" x2="15.5" y2="22.03125"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="3.25" y="3.28125" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="10" y="3.28125" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="16.75" y="3.28125" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="3.28125" y="9.75" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="10.03125" y="9.75" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="16.78125" y="9.75" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="3.3125" y="16.59375" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="10.0625" y="16.59375" width="4" height="4"/>
-      <rect fill="#d8d8d8" stroke="#000000" stroke-width="0" x="16.8125" y="16.59375" width="4" height="4"/>
-    </g>
-    </svg>
+    <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EAEAEA;}
+	.st1{fill:none;}
+</style>
+<defs>
+</defs>
+<g>
+	<path class="st0" d="M29.2,29.2v41.6h41.6V29.2H29.2z M68.8,42.9h-12V31.2h12V42.9z M44.6,55.1V44.9h10.2v10.2H44.6z M54.8,57.1
+		v11.7H44.6V57.1H54.8z M42.6,55.1H31.2V44.9h11.4V55.1z M44.6,42.9V31.2h10.2v11.7H44.6z M56.8,44.9h12v10.2h-12V44.9z M42.6,31.2
+		v11.7H31.2V31.2H42.6z M31.2,57.1h11.4v11.7H31.2V57.1z M56.8,68.8V57.1h12v11.7H56.8z"/>
+	<rect class="st1" width="100" height="100"/>
+</g>
+</svg>
+
   </g>
 </svg>
